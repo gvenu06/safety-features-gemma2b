@@ -3,12 +3,11 @@
 Independent mechanistic interpretability project: finding and causally testing
 sparse autoencoder (SAE) features linked to sycophancy in Gemma 2 2B.
 
-**Status: in progress** (started June 2026). See [research_log.md](research_log.md)
+**Status: in progress** See [research_log.md](research_log.md)
 for day-by-day progress
 
 ## Research question
-Can SAE features in Gemma 2 2B's residual stream identify — and causally
-mediate — sycophantic behavior (the model agreeing with a user's stated
+Can SAE features in Gemma 2 2B's residual stream identify and mediate sycophantic behavior (the model agreeing with a user's stated
 opinion instead of answering honestly)? And does steering those features
 work better than just prompting the model to be honest?
 
