@@ -22,6 +22,7 @@ No LaTex markers or technical documents in input. Not syncophancy-relevant.
 - A feature is one entry in the SAE's dictionary: a direction in activation space corresponding to a concept like "questions" or "authoritative tone"
     - A feature's activiation determines how present that feature is in the input
 - A hook is a function attached to a point in the model's forward pass. When computation reaches that point, the model calls the function and hands it the live activation and it completes an action with it
+
 -LLM's break text into tokens, which become vectors(of size 2304 in this case). Each vector goes through 26 layers where some element gets computed(Either attention or MLP which gets computed with matrix multiplication with weights) and added back on. At the end, the final token's vector gets scored against every word in its vocabulary, and the probability of the next word gets assigned.
 -Seperately, we get the vector at layer 12 with a hook and feed that through a copy where there are 16k features, each with a vector template, and the incoming vector compares itself to each vector template, and an activation value is assigned which shows how similar the incoming vector is with the vector template. This becomes our "readable" description of what the model was "thinking"
 
